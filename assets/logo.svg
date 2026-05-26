@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E8C97A"/>
+      <stop offset="50%" stop-color="#C9A050"/>
+      <stop offset="100%" stop-color="#A88035"/>
+    </linearGradient>
+  </defs>
+  <!-- Golden ratio spiral / compass -->
+  <circle cx="100" cy="95" r="75" stroke="url(#g)" stroke-width="2.5" fill="none"/>
+  <circle cx="100" cy="95" r="55" stroke="url(#g)" stroke-width="1" fill="none" opacity=".3"/>
+  <!-- Compass / A-frame -->
+  <path d="M100 25 L55 155 L65 155 L100 55 L135 155 L145 155 Z" stroke="url(#g)" stroke-width="2.5" fill="none"/>
+  <!-- Crossbar -->
+  <line x1="72" y1="120" x2="128" y2="120" stroke="url(#g)" stroke-width="2.5"/>
+  <!-- АД text -->
+  <text x="100" y="190" text-anchor="middle" font-family="Georgia,serif" font-size="22" font-weight="700" fill="url(#g)" letter-spacing="8">АД</text>
+</svg>

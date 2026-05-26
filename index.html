@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Website Sample — Template for Your Business</title>
+  <meta name="description" content="Cinematic website sample. See how your business could look online.">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- ═══ LOADER ═══ -->
+  <div id="loader">
+    <div class="loader-content">
+      <div class="loader-logo"><img src="assets/logo.svg" alt="Sample" class="loader-logo-img"> YOUR COMPANY</div>
+      <div class="loader-bar"><div class="loader-fill" id="loaderFill"></div></div>
+      <div class="loader-pct" id="loaderPct">0%</div>
+    </div>
+  </div>
+
+  <!-- ═══ SCROLL CANVAS ═══ -->
+  <canvas id="scrollCanvas"></canvas>
+
+  <!-- ═══ HEADER ═══ -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="#" class="logo">
+        <img src="assets/logo.svg" alt="Sample" class="logo-img">
+        <span class="logo-text">YOUR COMPANY</span>
+      </a>
+      <nav class="desktop-nav" id="desktopNav">
+        <a href="#" class="nav-link active" data-section="0">Home</a>
+        <a href="#" class="nav-link" data-section="1">Services</a>
+        <a href="#" class="nav-link" data-section="2">Portfolio</a>
+        <a href="#" class="nav-link" data-section="3">Process</a>
+        <a href="#" class="nav-link" data-section="4">About Us</a>
+        <a href="#" class="nav-link" data-section="5">Contact</a>
+      </nav>
+      <a href="tel:#" class="header-cta">YOUR PHONE</a>
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" id="mobileNav">
+      <a href="#" class="nav-link" data-section="0">Home</a>
+      <a href="#" class="nav-link" data-section="1">Services</a>
+      <a href="#" class="nav-link" data-section="2">Portfolio</a>
+      <a href="#" class="nav-link" data-section="3">Process</a>
+      <a href="#" class="nav-link" data-section="4">About Us</a>
+      <a href="#" class="nav-link" data-section="5">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ═══ PAGES ═══ -->
+  <div id="ui-layer">
+
+    <!-- ── 0: HERO ── -->
+    <section class="page" id="page-0">
+      <div class="page-inner hero-content">
+        <img src="assets/logo.svg" alt="Sample" class="hero-logo reveal">
+        <div class="hero-badge">YOUR BRAND • YOUR NICHE • YOUR SPECIALTY</div>
+        <h1 class="hero-title">
+          <span class="hero-line1">YOUR COMPANY</span>
+          <span class="hero-line2 accent-text">NAME HERE</span>
+        </h1>
+        <p class="hero-sub">Here you can write your slogan, a brief description, or a hot offer — anything you like!</p>
+        <div class="hero-buttons">
+          <a href="#" class="btn btn-primary" data-section="5">Custom Button</a>
+          <a href="#" class="btn btn-outline" data-section="2">Your Links</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-num accent-text">14</span><span class="stat-label">years of practice</span></div>
+          <div class="stat"><span class="stat-num accent-text">380+</span><span class="stat-label">Projects</span></div>
+          <div class="stat"><span class="stat-num accent-text">25K</span><span class="stat-label">sq ft designed</span></div>
+          <div class="stat"><span class="stat-num accent-text">8</span><span class="stat-label">Countries</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 1: SERVICES ── -->
+    <section class="page" id="page-1">
+      <div class="page-inner">
+        <h2 class="section-title">Your <span class="accent-text">Services</span></h2>
+        <p class="section-sub">Here you can describe your offerings as shown in the examples below.</p>
+        <div class="cards-grid services-grid">
+          <div class="card reveal">
+            <div class="card-icon">📐</div>
+            <h3>Architectural Design</h3>
+            <p>Concept development, schematic design, and construction documents. Custom homes, villas, multi-family complexes. BIM modeling and design oversight.</p>
+            <div class="card-tag">from $25/sq ft</div>
+          </div>
+          <div class="card reveal">
+            <div class="card-icon">🎨</div>
+            <h3>Interior Design</h3>
+            <p>Space planning, material and furniture selection, photorealistic 3D visualization. All styles — from minimalism to art deco.</p>
+            <div class="card-tag">from $40/sq ft</div>
+          </div>
+          <div class="card reveal">
+            <div class="card-icon">🏗️</div>
+            <h3>Design Oversight</h3>
+            <p>On-site supervision at every stage of construction. Regular site visits, compliance checks, and real-time design adjustments.</p>
+            <div class="card-tag">from $2,500/mo</div>
+          </div>
+          <div class="card reveal">
+            <div class="card-icon">🛋️</div>
+            <h3>Procurement</h3>
+            <p>Sourcing and purchasing furniture, lighting, decor, and finishing materials. Working with top American and European manufacturers. Full logistics management.</p>
+            <div class="card-tag">Dedicated Project Manager</div>
+          </div>
+          <div class="card reveal">
+            <div class="card-icon">🏢</div>
+            <h3>Commercial Projects</h3>
+            <p>Offices, restaurants, hotels, showrooms. Spaces that strengthen your brand and boost conversions. We factor in traffic flow, ergonomics, and building codes.</p>
+            <div class="card-tag">HoReCa & Retail</div>
+          </div>
+          <div class="card reveal">
+            <div class="card-icon">🌿</div>
+            <h3>Landscape Design</h3>
+            <p>Designing outdoor living spaces: terraces, patios, lounge areas, lighting, and landscaping. Seamless integration with the home's architecture.</p>
+            <div class="card-tag">Ecosystem Approach</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 2: PORTFOLIO ── -->
+    <section class="page" id="page-2">
+      <div class="page-inner">
+        <h2 class="section-title">Here you can showcase <span class="accent-text">Examples of your work</span></h2>
+        <p class="section-sub">Add something that will impress everyone</p>
+        <div class="cards-grid portfolio-grid">
+          <div class="card project-card reveal">
+            <div class="project-tag">Example</div>
+            <h3>Project "Alpha"</h3>
+            <p class="project-meta">📍 Wynwood &bull; 5,400 sq ft</p>
+            <p>A conceptual property featuring unique architecture and floor-to-ceiling windows. Cutting-edge technology and exclusive materials.</p>
+            <div class="project-stats"><span>🏆 Best Project 2025</span></div>
+          </div>
+          <div class="card project-card reveal">
+            <div class="project-tag tag-interior">Example</div>
+            <h3>The "Meridian" Loft</h3>
+            <p class="project-meta">📍 Design District &bull; 3,000 sq ft</p>
+            <p>A stylish interior in the spirit of new minimalism. Natural textures, smart lighting, and custom furniture.</p>
+            <div class="project-stats"><span>✨ Editor's Choice</span></div>
+          </div>
+          <div class="card project-card reveal">
+            <div class="project-tag tag-commercial">Example</div>
+            <h3>The "Aurora" Space</h3>
+            <p class="project-meta">📍 Brickell &bull; 1,600 sq ft</p>
+            <p>A next-generation commercial space. Ergonomics, acoustics, and brand integration at every level.</p>
+            <div class="project-stats"><span>🍽️ Award of the Year</span></div>
+          </div>
+          <div class="card project-card reveal">
+            <div class="project-tag">Example</div>
+            <h3>Villa "Horizon"</h3>
+            <p class="project-meta">📍 Coral Gables &bull; 4,300 sq ft</p>
+            <p>A waterfront residence with terraces, pool, and ocean views. Fully integrated with the surrounding landscape.</p>
+            <div class="project-stats"><span>🌊 Exclusive</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 3: PROCESS ── -->
+    <section class="page" id="page-3">
+      <div class="page-inner">
+        <h2 class="section-title">How We <span class="accent-text">Work</span></h2>
+        <p class="section-sub">Describe how your collaboration with clients works, as shown in the example below</p>
+        <div class="process-timeline">
+          <div class="process-step card reveal">
+            <div class="step-number">01</div>
+            <h3>Introduction & Brief</h3>
+            <p>Initial meeting at the studio or on-site. We discuss your lifestyle, taste, and budget. We create a detailed project brief.</p>
+            <div class="step-duration">1–2 weeks</div>
+          </div>
+          <div class="process-step card reveal">
+            <div class="step-number">02</div>
+            <h3>Concept</h3>
+            <p>We develop 2–3 conceptual directions. Mood boards, floor plans, preliminary visualizations. You choose — we refine.</p>
+            <div class="step-duration">2–4 weeks</div>
+          </div>
+          <div class="process-step card reveal">
+            <div class="step-number">03</div>
+            <h3>Design Development</h3>
+            <p>Detailed design work: drawings, elevations, details, specifications. BIM model, photorealistic renders. Every detail approved by you.</p>
+            <div class="step-duration">4–8 weeks</div>
+          </div>
+          <div class="process-step card reveal">
+            <div class="step-number">04</div>
+            <h3>Procurement</h3>
+            <p>We source and order everything — from tiles to door handles. We work directly with manufacturers. Full logistics and delivery management.</p>
+            <div class="step-duration">4–12 weeks</div>
+          </div>
+          <div class="process-step card reveal">
+            <div class="step-number">05</div>
+            <h3>Construction & Oversight</h3>
+            <p>On-site design oversight. Quality control, project compliance, contractor coordination. Weekly photo progress reports.</p>
+            <div class="step-duration">3–12 months</div>
+          </div>
+          <div class="process-step card reveal">
+            <div class="step-number">06</div>
+            <h3>Project Handover</h3>
+            <p>Final cleanup, styling, professional photography. Delivery of documentation, warranty certificates, and keys.</p>
+            <div class="step-duration">2-Year Warranty</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 4: ABOUT ── -->
+    <section class="page" id="page-4">
+      <div class="page-inner">
+        <h2 class="section-title">About <span class="accent-text">Us</span></h2>
+        <p class="section-sub">Share YOUR COMPANY's achievements and great client testimonials</p>
+        <div class="cards-grid about-grid">
+          <div class="card reveal">
+            <div class="card-icon">🎓</div>
+            <h3>Our Team</h3>
+            <p>Seasoned professionals with years of experience. Average tenure — 10 years. Every project is managed by a dedicated project manager.</p>
+          </div>
+          <div class="card reveal">
+            <div class="card-icon">🏅</div>
+            <h3>Awards</h3>
+            <p>Winners of the "Avant-Garde Design Award" and "Best of Houzz Design Awards." Featured in leading industry publications.</p>
+          </div>
+          <div class="card reveal">
+            <div class="card-icon">🤝</div>
+            <h3>Partners</h3>
+            <p>Official partners of "Phoenix Corp," "Orion Group," and "Titan Workshop." Exclusive terms for our clients.</p>
+          </div>
+          <div class="card reveal">
+            <div class="card-icon">💎</div>
+            <h3>Our Approach</h3>
+            <p>Not just "pretty pictures" — buildable solutions. 98% of our projects are delivered on time and on budget.</p>
+          </div>
+        </div>
+        <div class="testimonials-row">
+          <div class="testimonial card reveal">
+            <blockquote>"YOUR COMPANY helped us bring our dream project to life. The process was transparent — we saw every step. The result exceeded all expectations."</blockquote>
+            <cite>— John & Maria P., clients of "StarPath LLC"</cite>
+          </div>
+          <div class="testimonial card reveal">
+            <blockquote>"This is our third project together. No other contractor knows our taste better. Absolute trust."</blockquote>
+            <cite>— James W., client of "Galaxy Corp"</cite>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 5: CONTACTS ── -->
+    <section class="page" id="page-5">
+      <div class="page-inner">
+        <h2 class="section-title">Let's start your <span class="accent-text">project</span></h2>
+        <p class="section-sub">Add your contacts, address, and social media so clients can reach you</p>
+        <div class="contact-layout">
+          <form class="contact-form card reveal" id="contactForm">
+            <input type="text" placeholder="Your name and company" required id="inputName">
+            <input type="tel" placeholder="+1 (___) ___-____" required id="inputPhone">
+            <select id="inputNiche">
+              <option value="">Your industry</option>
+              <option>Healthcare / Beauty</option>
+              <option>Restaurants / HoReCa</option>
+              <option>Construction / Remodeling</option>
+              <option>Architecture / Design</option>
+              <option>IT / Consulting</option>
+              <option>Auto Business / Detailing</option>
+              <option>Fitness / Sports</option>
+              <option>Education</option>
+              <option>Tourism / Hotels</option>
+              <option>Manufacturing</option>
+              <option>Other</option>
+            </select>
+            <select id="inputBudget">
+              <option value="">Website budget</option>
+              <option>$500 – $1,000</option>
+              <option>$1,000 – $1,500</option>
+              <option>$1,500 – $2,500</option>
+              <option>$2,500+</option>
+            </select>
+            <textarea placeholder="What do you want from your website? What's your current site (link)?" rows="3" id="inputMessage"></textarea>
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">Order Website</button>
+            <p class="form-note">We'll respond within 2 hours during business hours. No spam.</p>
+          </form>
+          <div class="contact-info card reveal">
+            <div class="contact-row">
+              <span class="contact-icon">📞</span>
+              <div><strong>Phone</strong><a href="tel:#">YOUR PHONE</a></div>
+            </div>
+            <div class="contact-row">
+              <span class="contact-icon">📧</span>
+              <div><strong>Email</strong><a href="mailto:#">YOUR EMAIL</a></div>
+            </div>
+            <div class="contact-row">
+              <span class="contact-icon">📍</span>
+              <div><strong>Studio</strong><span>YOUR ADDRESS</span></div>
+            </div>
+            <div class="contact-row">
+              <span class="contact-icon">🕐</span>
+              <div><strong>Hours</strong><span>Mon–Fri: 10:00 AM – 7:00 PM, by appointment</span></div>
+            </div>
+            <div class="contact-row">
+              <span class="contact-icon">💬</span>
+              <div><strong>Messengers</strong><span>WhatsApp • Telegram</span></div>
+            </div>
+            <div class="contact-row">
+              <span class="contact-icon">📸</span>
+              <div><strong>Social Media</strong><span>Instagram • Pinterest • Behance</span></div>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:center;margin-top:32px">
+          <a href="https://unityspirit.github.io/global-plus-en/" class="btn btn-outline" style="font-size:16px;padding:14px 40px">BACK TO MAIN PAGE</a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

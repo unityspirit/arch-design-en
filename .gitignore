@@ -1,0 +1,10 @@
+veo_clips/
+*.mp4
+*.png
+!frames-webp/
+!frames-mobile/
+!assets/
+!assets/*.png
+node_modules/
+.DS_Store
+Thumbs.db
