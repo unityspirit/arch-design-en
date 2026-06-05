@@ -1,18 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#E8C97A"/>
-      <stop offset="50%" stop-color="#C9A050"/>
-      <stop offset="100%" stop-color="#A88035"/>
+    <linearGradient id="ga" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4A94B"/>
+      <stop offset="100%" stop-color="#b8912f"/>
     </linearGradient>
   </defs>
-  <!-- Golden ratio spiral / compass -->
-  <circle cx="100" cy="95" r="75" stroke="url(#g)" stroke-width="2.5" fill="none"/>
-  <circle cx="100" cy="95" r="55" stroke="url(#g)" stroke-width="1" fill="none" opacity=".3"/>
-  <!-- Compass / A-frame -->
-  <path d="M100 25 L55 155 L65 155 L100 55 L135 155 L145 155 Z" stroke="url(#g)" stroke-width="2.5" fill="none"/>
-  <!-- Crossbar -->
-  <line x1="72" y1="120" x2="128" y2="120" stroke="url(#g)" stroke-width="2.5"/>
-  <!-- АД text -->
-  <text x="100" y="190" text-anchor="middle" font-family="Georgia,serif" font-size="22" font-weight="700" fill="url(#g)" letter-spacing="8">АД</text>
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="90" fill="#1a1a2e"/>
+  <circle cx="100" cy="100" r="82" fill="none" stroke="url(#ga)" stroke-width="2"/>
+  <!-- Architectural triangle / roof -->
+  <polygon points="100,40 50,110 150,110" fill="none" stroke="url(#ga)" stroke-width="3" stroke-linejoin="round"/>
+  <!-- Columns -->
+  <line x1="70" y1="110" x2="70" y2="150" stroke="url(#ga)" stroke-width="3" stroke-linecap="round"/>
+  <line x1="90" y1="110" x2="90" y2="150" stroke="url(#ga)" stroke-width="3" stroke-linecap="round"/>
+  <line x1="110" y1="110" x2="110" y2="150" stroke="url(#ga)" stroke-width="3" stroke-linecap="round"/>
+  <line x1="130" y1="110" x2="130" y2="150" stroke="url(#ga)" stroke-width="3" stroke-linecap="round"/>
+  <!-- Base line -->
+  <line x1="60" y1="150" x2="140" y2="150" stroke="url(#ga)" stroke-width="3" stroke-linecap="round"/>
+  <!-- Compass / drafting tool accent -->
+  <circle cx="100" cy="80" r="12" fill="none" stroke="url(#ga)" stroke-width="1.5"/>
+  <circle cx="100" cy="80" r="3" fill="url(#ga)"/>
 </svg>
