@@ -80,7 +80,9 @@ function preloadFrames() {
         setTimeout(() => { if(slb) slb.style.opacity='1';slb.style.visibility='visible'; }, 600);
       }
     } else {
-      const fill = document.getElementById('siteLoadingFillInner');
+      const fill = document.getElementById('slbFill');
+      const txt = document.getElementById('siteLoadingText');
+      const txt = document.getElementById('siteLoadingText');
       const txt = document.getElementById('siteLoadingText');
       const phase2Pct = Math.round(((realPct - PRELOADER_THRESHOLD) / (100 - PRELOADER_THRESHOLD)) * 100);
       if (fill) fill.style.width = phase2Pct + '%';
@@ -98,7 +100,16 @@ function preloadFrames() {
 
 function finishLoading() {
   isReady = true;
-  loader.style.transition='opacity 0.7s';loader.style.opacity='0';setTimeout(function(){loader.style.display='none'},700);
+  if (loader) {
+    loader.style.transition = 'opacity 0.7s';
+    loader.style.opacity = '0';
+    setTimeout(function() { loader.style.display = 'none'; }, 700);
+  }
+  if (pages[0]) pages[0].classList.add('is-active');
+}, 700);
+  }
+  if (pages[0]) pages[0].classList.add('is-active');
+},700);
   const slb = document.getElementById('siteLoadingBar');
   const slbTxt = document.getElementById('siteLoadingText');
   if (slbTxt) slbTxt.textContent = 'Loading complete';
